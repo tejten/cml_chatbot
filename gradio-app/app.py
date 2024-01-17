@@ -78,7 +78,7 @@ def upload_file(files):
 
 
 #Embedding function which will be used to convert the text to Vector Embeddings
-embedding_function = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2") #TODO: Find replacement
+embedding_function = SentenceTransformerEmbeddings(model_name="sentence-transformers/all-MiniLM-L12-v2") #TODO: Find replacement
 
 #Defining LangChain's Chroma Client 
 langchain_chroma = Chroma(
